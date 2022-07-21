@@ -1,0 +1,217 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-21T05:16:31.702Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8647608500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "TC01_Validation of facebook web application login with valid credentials",
+        "description": "",
+        "id": "validation-of-facebook-web-application-login-page;tc01-validation-of-facebook-web-application-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8635758200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 780700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launch the facebook web application URL",
+            "match": {
+              "location": "Stepdefinition.userLaunchTheFacebookWebApplicationURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 398019500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Enters valid \"saravanan@gmail.com\" and  valid \"saravana@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saravanan@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"saravana@123\"",
+                  "offset": 51
+                }
+              ],
+              "location": "Stepdefinition.userEntersValidAndValid(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108399900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "Stepdefinition.userClicksTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify the Error message is displayed",
+            "match": {
+              "location": "Stepdefinition.userVerifyTheErrorMessageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T05:16:49.537Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3410376200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "TC02_Validation of facebook web application signup page with invalid credentials",
+        "description": "",
+        "id": "validation-of-facebook-web-application-login-page;tc02-validation-of-facebook-web-application-signup-page-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1110892600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 68900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User launch the facebook web application URL",
+            "match": {
+              "location": "Stepdefinition.userLaunchTheFacebookWebApplicationURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125180000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clicks the create new account button",
+            "match": {
+              "location": "Stepdefinition.clicksTheCreateNewAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1007371100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters the invalid \"saravana\" and \"krish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saravana\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"krish\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Stepdefinition.userEntersTheInvalidAnd(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 182759700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks the signup Button",
+            "match": {
+              "location": "Stepdefinition.userClicksTheSignupButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verify the Error message is displayed",
+            "match": {
+              "location": "Stepdefinition.userVerifyTheErrorMessageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Facebook Web Application login page",
+    "description": "",
+    "id": "validation-of-facebook-web-application-login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/facebook.feature",
+    "tags": []
+  }
+]
